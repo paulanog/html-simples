@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>Pedidos</h1>
+    <form method="post" action="teste.jsp">
+        <div>
+        <label for="nome">Nome:</label> 
+        <input type="text" name="nome">
+    </div>
+    <br>
+    <div>
+        <label for="email">Email:</label> 
+        <input type="email" name="email">
+    </div>
+    <br>
+    <div>
+        <label for="endereco">Endereço:</label> 
+        <input type="text" name="endereco">
+    </div>
+        <br>
+        Tamanho: 
+        <br><input type="radio" name="tamanho" value="p" checked>Pequena<br>
+        <input type="radio" name="tamanho" value="m">Média<br>
+        <input type="radio" name="tamanho" value="g">Grande
+        <br>
+        <div>
+            <br>
+    Sabor:<select>
+           <option>Calabresa</option>
+           <option>Frango</option> 
+           <option>Bacon</option>
+           <option>A Moda</option>
+         </select> 
+         </div>  
+        <br>
+        Escolha a Borda:
+        <input type="checkbox" name="borda" value="sim">Borda<br>
+        <select><br>
+            <option>Cheddar</option>
+           <option>Catupiry</option> 
+           <option>Catupiry/Chedar</option>
+        </select>
+        <br>
+        Adicionais:<br>
+        <input type="checkbox" name="queijo" value="sim">Queijo Extra<br>
+        <input type="checkbox" name="batata" value="sim">batata<br>
+        <input type="checkbox" name="Catupiry" value="sim">Catupiry<br>
+        <input type="checkbox" name="cheddar" value="sim">Cheddar<br><br>
+        Data e hora do Pedido: <input type="datetime-local" name="dataPedido"><br>
+        <br>
+        Comentários <br>
+        <textarea name="mensagem" rows="10" cols="30"></textarea>
+        <br>
+
+        <div class="form-element">
+            <input type="submit" value="Enviar">
+
+
+      </form>  
+</body>
+</html>
